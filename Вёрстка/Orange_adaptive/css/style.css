@@ -1,0 +1,502 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: #fff;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
+	font-family: 'Arial', sans-serif;
+	height: 100%;
+}
+h1{
+	font-size: 22px;
+	font-weight: bold;
+	color: #113848;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #404040;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	color: #404040;
+	text-transform: uppercase;
+}
+p{
+	font-size: 13px;
+	color: #505050;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #f67f19;
+}
+#wrap{
+	width: 61.1940%; /*820px*/
+	margin: 0 auto;
+	min-height: 100%;
+}
+#top{
+	height: 71px;
+	overflow: hidden;
+}
+#top img{
+	margin-top: 19px;
+}
+#top form{
+	float: right;
+	line-height: 71px;
+	color: #888;
+	font-weight: bold;
+	font-size: 11px;
+	font-style: oblique;
+	position: relative;
+}
+#top form span{
+	color: #fff;
+}
+#top form p{
+	display: inline;
+}
+#top form input{
+	background-color: #373737;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #f57514;
+	padding: 9px 43px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0px 0px #151515,
+				1px 1px 0px 0px #2d2d2d inset;
+	margin-left: 22px;
+	cursor: pointer;
+}
+#nav{
+	height: 60px;
+}
+#nav ul{
+	list-style: none;
+	line-height: 60px;
+	overflow: hidden;
+}
+#nav ul li{
+	float: left;
+	margin-right: 3.4146%; /*28px*/
+}
+#nav ul li a{
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	padding: 8px 20px;
+	text-transform: uppercase;
+}
+	#nav ul li a:hover{
+		background-color: #e46000;
+		border-radius: 10px;
+	}
+#header{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	background-position: -7px bottom;
+	position: relative;
+}
+#text{
+	width: 47.6829%; /*391px*/
+	position: absolute;
+	left: 430px; /*left: 58%*/ /*right: 0px*/
+	top: 75px;
+}
+#text h1{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ef8b21;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+#text p{
+	font-size: 14px;
+	color: #353535;
+	padding-top: 13px;
+	border-top: 1px solid #f89c39;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.line{
+	border-top: 1px solid #fbfbfb;
+	border-bottom: 1px solid #f0f0f0;
+}
+.row{
+	overflow: hidden;
+	margin: 50px 0;
+}
+.section1{
+	width: 26.8292%; /*220px*/
+	float: left;
+	margin-right: 9.7560%; /*80px*/
+}
+.section1 h2{
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	margin-bottom: 15px;
+	height: 44px;
+}
+#photography{
+	background-image: url(../images/photography.png);
+}
+#business{
+	background-image: url(../images/business.png);
+}
+#designing{
+	background-image: url(../images/designing.png);
+}
+.section1 h2 span{
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	color: #707070;
+}
+.section1 a{
+	float: right;
+	margin-top: 14px;
+}
+.section2{
+	width: 48.7804%; /*400px*/
+	float: left;
+	margin-right: 2.4390%; /*20px*/
+}
+.section2 h3{
+	margin-bottom: 16px;
+}
+.section2 .pics{
+	width: 100%;
+}
+.section2 .pics div{
+	float: left;
+	padding: 3px;
+	border: 1px solid #ececec;
+	width: 45%; /*180px*/
+	height: 51px;
+	border-radius: 2px;
+}
+.section2 .pics div img{
+	width: 100%; /*180px*/
+	height: 51px;
+}
+.latest1{
+	margin-right: 5%; /*20px*/
+	margin-bottom: 20px;
+}
+.latest2{
+	margin-bottom: 20px;
+}
+.latest3{
+	margin-right: 5%; /*20px*/
+}
+#footer{
+	height: 68px;
+	background-color: #191919;
+	overflow: hidden;
+	position: relative;
+}
+#footercontent{
+	width: 61.1940%; /*820px*/
+	margin: 0 auto;
+	line-height: 66px;
+}
+#footercontent img{
+	margin-right: 2.3170%; /*19px*/
+	vertical-align: middle;
+}
+#footercontent ul{
+	list-style: none;
+	float: right;
+}
+#footercontent ul li{
+	float: left;
+	margin-left: 10px;
+}
+#footercontent ul li a, 
+#footer span{
+	font-size: 10px;
+	font-weight: bold;
+	color: #4b4b4b;
+}
+	#footercontent ul li a:hover{
+		color: #fff;
+	}
+
+/* <------------------ media queries ----------------->*/
+
+@media screen and (max-width: 1200px){
+	#wrap{
+		width: 80%; /*1072px*/
+	}
+	#footercontent{
+		width: 80%; /*1072px*/
+	}
+}
+@media screen and (max-width: 860px){
+	#wrap{
+		width: 90%; /*1206px*/
+	}
+	#footercontent{
+		width: 90%; /*1206px*/
+	}
+	#top form{
+		position: relative;
+	}
+	#top form p{
+		float: left;
+		padding-right: 5px;
+	}
+	#top form input{
+		position: absolute;
+		top: 25px;
+		right: 45px;
+	}
+	#nav ul li{
+		float: left;
+		margin-right: 2.3%; /*18.86px*/
+	}
+	#header{
+		background-image: url(../images/header_80%.png);
+		background-position: -10px bottom;
+	}
+	#text{
+		width: 35%; /*391px*/
+		left: 350px;
+		top: 45px;
+	}
+	#text h1{
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	#text p{
+		font-size: 12px;
+	}
+	.section1 h2{
+		background-repeat: no-repeat;
+		padding-left: 50px;
+		margin-bottom: 15px;
+		height: 44px;
+		font-size: 16px;
+	}
+	.section1 h2 span{	
+		font-size: 13px;	
+	}
+	#photography{
+		background-image: url(../images/photography_80%.png);
+	}
+	#business{
+		background-image: url(../images/business_80%.png);
+	}
+	#designing{
+		background-image: url(../images/designing_80%.png);
+	}
+	.section2 .pics div{
+		padding: 0.75%;
+	}
+	#footer span{
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 30px;
+		line-height: 10px;
+	}
+
+}
+@media screen and (max-width: 600px){
+	#wrap{
+		width: 95%; /*1206px*/
+	}
+	#footercontent{
+		width: 95%; /*1206px*/
+	}
+	#top form p{
+		float: left;
+		padding-right: 5px;
+		font-size: 12px;
+	}
+	#top form input{
+		position: absolute;
+		top: 25px;
+		right: 10px;
+	}
+	#nav ul{
+		width: 100%;
+	}
+	#nav ul li{
+		width: 20%;
+		float: left;
+		margin-right: 0%; /*28px*/
+	}
+	#nav ul li a{
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		padding: 0px 0px;
+	}
+	#header{
+		background-image: url(../images/header_60%.png);
+		background-position: -10px bottom;
+	}
+	#text{
+		width: 35%; /*391px*/
+		left: 270px;
+		top: 45px;
+	}
+	#text h1{
+		font-size: 20px;
+		padding-bottom: 10px;
+		position: absolute;
+		top: 0px;
+		left: -260px;
+	}
+	#text p{
+		font-size: 13px;
+		position: absolute;
+		top: 60px;
+		left: 0px;
+		border-top: none;
+	}
+	.section1{
+		width: 80%; /*220px*/
+		margin: 0 10%;
+		margin-bottom: 40px;
+		margin-right: 0%;
+	}
+	.section1 h2{
+		background-repeat: no-repeat;
+		padding-left: 60px;
+		font-size: 20px;
+	}
+	.section1 p{
+		font-size: 13px;
+	}
+	#photography{
+		background-image: url(../images/photography.png);
+	}
+	#business{
+		background-image: url(../images/business.png);
+	}
+	#designing{
+		background-image: url(../images/designing.png);
+	}
+	.section2{
+		width: 80%; /*400px*/
+		margin: 0 10%;
+		margin-right: 0%; /*20px*/
+		margin-bottom: 40px;
+	}	
+	#footer span{
+		left: 10px;	
+		font-size: 8px;
+	}	
+}
+@media screen and (max-width: 480px){
+	#top img{
+		margin-top: 5px;
+		float: left;
+	}
+	#top form{
+		float: left;
+		position: relative;
+	}
+	
+	#top form p{
+		display: inline;
+		font-size: 11px;
+		float: left;
+		padding-right: 30px;
+	}
+	#top form input{
+		top: 0px;
+		right: -45px;
+		padding: 5px 21px;
+	}
+	#nav ul li a{
+		font-size: 10px;
+		padding: 0 0;
+	}
+	#header{
+		background-image: url(../images/header_60%.png);
+		background-position: center bottom;
+	}
+	#text{
+		width: 35%; /*391px*/
+		left: 215px;
+		top: 45px;
+	}
+	#text h1{
+		font-size: 16px;
+		padding-bottom: 10px;
+		position: absolute;
+		top: -35px;
+		left: -198px;
+	}
+	#text p{
+		font-size: 13px;
+		position: absolute;
+		top: 0px;
+		left: -198px;
+		border-top: none;
+	}
+	#footercontent ul li{
+		float: none;
+	}
+	#footercontent ul{
+		list-style: none;
+		float: right;
+		height: 100%;
+		margin-top: 5px;
+	}
+	#footercontent ul li{
+		height: 15%;
+		float: none;
+		margin-left: 0px;
+		line-height: 10px;
+	}
+	#footer span{
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 320px){
+	#nav ul li a{
+		font-size: 9px;
+		padding: 0 0;
+	}
+	#text{
+		width: 20%; /*391px*/
+		left: 215px;
+		top: 45px;
+	}
+	#text h1{
+		font-size: 14px;
+		padding-bottom: 10px;
+		position: absolute;
+		top: -35px;
+		left: -198px;
+	}
+	#text p{
+		font-size: 11px;
+		position: absolute;
+		top: 0px;
+		left: -198px;
+		border-top: none;
+	}
+}
+
+
+.marnone{
+	margin-right: 0;
+}

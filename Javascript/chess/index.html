@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Шахматная доска</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+        var table = new Array(12);
+        for (var i = 0; i < table.length; i++) { 
+            
+            table[i] = new Array(12);           
+        }
+
+        for (var row = 0; row < table.length; row++) {
+            for (var col = 0; col < table[row].length; col++) {
+                if ((row + col) % 2 == 1)
+                    table[row][col] = "<img src='black.jpg' width='50' height='50'/>";
+                else
+                    table[row][col] = "<img src='white.jpg' width='50' height='50'/>";
+            }
+        }
+
+       for (var row = 0; row < table.length; row++) {
+           for (var col = 0; col < table[row].length; col++) {
+                document.write(table[row][col]);
+
+           }
+            document.write("<br/>");
+        }
+
+    </script>
+
+
+</body>
+</html>
